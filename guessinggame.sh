@@ -1,5 +1,4 @@
-function guessinggame(){
-  true_ans=$(ls-l |grep "^-"|wc -l)
+ true_ans=$(ls -l |grep "^-"|wc -l)
   while true;
   do
     echo "Please enter your guess"
@@ -15,4 +14,4 @@ function guessinggame(){
     break;
     fi
   done
-}
+
