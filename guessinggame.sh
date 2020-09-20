@@ -1,4 +1,8 @@
- true_ans=$(ls -l |grep "^-"|wc -l)
+echo "The Guessing Game "
+echo "which helps in finding the number of files in Current Directory! "
+echo " "
+function guess(){
+  true_ans=$(ls -l |grep "^-"|wc -l)
   while true;
   do
     echo "Please enter your guess"
@@ -15,3 +19,6 @@
     fi
   done
 
+}
+
+guess
